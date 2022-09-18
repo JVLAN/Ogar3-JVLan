@@ -34,7 +34,7 @@ As Ogar3 is written in Node.js, you must have Node.js and its "ws" module instal
 Although Ogar3 allows you to run both the Agar.io master server and game server separately, it's currently recommended that you run both servers together until the master server is more implemented. Alternatively, you could run the game server only, and use a client-side mod to connect to the IP address of the server.
 
 ```sh
-~$ git clone git:github.com/Faris90/Ogar3.git Ogar3
+~$ git clone git@github.com:IIPoliII/Ogar3-JVLan.git Ogar3
 ~$ npm install ./Ogar3	
 ~$ npm start
 ```
