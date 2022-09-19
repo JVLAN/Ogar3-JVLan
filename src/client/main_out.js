@@ -1092,7 +1092,7 @@
         ua = false,
         userScore = 0,
         showDarkTheme = true,
-        showMass = false,
+        showMass = true,
         posX = nodeX = ~~((leftPos + rightPos) / 2),
         posY = nodeY = ~~((topPos + bottomPos) / 2),
         posSize = 1,
