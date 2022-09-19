@@ -164,62 +164,14 @@ fs.appendFileSync('./src/client/index.html', `<!DOCTYPE html>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="630"/>
     <meta property="og:type" content="website"/>
-    <title>${titleh}</title>
+    <title>Ogar3</title>
     <link id="favicon" rel="icon" type="image/png" href="favicon-32x32.png"/>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="Vector2.js"></script>
     <script src="main_out.js?542"></script>
-	<script>/ jshint -W097 /
-'use strict';
-
-var SplitInterval;
-var MacroInterval;
-var SplitDebounce = false;
-var MacroDebounce = false;
-$(document).on('keydown', function(input) {
-    console.log("got keydown")
-    if (input.keyCode == 16) {
-        if (SplitDebounce) {
-            return;
-        }
-        SplitDebounce = true;
-        SplitInterval = setInterval(function() {
-            $("body").trigger($.Event("keydown", {
-                keyCode: 32
-            }));
-            $("body").trigger($.Event("keyup", {
-                keyCode: 32
-            }));
-        }, 0);
-    } else if (input.keyCode == 69) {
-  if (MacroDebounce) {
-            return;
-        }
-        MacroDebounce = true;
-        MacroInterval = setInterval(function() {
-            $("body").trigger($.Event("keydown", {
-                keyCode: 87
-            }));
-            $("body").trigger($.Event("keyup", {
-                keyCode: 87
-            }));
-        }, 0);
- }
-})
-
-$(document).on('keyup', function(input) {
-    if (input.keyCode == 16) {
-        SplitDebounce = false;
-        clearInterval(SplitInterval);
-        return;
-    } else if (input.keyCode == 69) {
-        MacroDebounce = false;
-        clearInterval(MacroInterval);
-        return;
-    }
-})</script>
+	
     <style>body {
         padding: 0;
         margin: 0;
@@ -355,14 +307,14 @@ $(document).on('keyup', function(input) {
     <div id="helloDialog">
         <form role="form">
             <div class="form-group">
-                <div style="float: left; margin-left: 20px;"><h2>${titleh}</h2></div>
+                <div style="float: left; margin-left: 20px;"><h2>Ogar3</h2></div>
                 <div class="fb-like" style="float: right; margin-top: 30px;"
                      data-href="https://www.facebook.com/playagar.io" data-layout="button" data-action="like"
                      data-show-faces="true" data-share="true"></div>
                 <br clear="both"/>
             </div>
             <div class="form-group">
-                <input id="nick" class="form-control" placeholder="${voody}" maxlength="15"/>
+                <input id="nick" class="form-control" placeholder="Nick" maxlength="15"/>
                <!-- <select id="gamemode" class="form-control" onchange="setGameMode($(this).val());" required>
                     <option selected value="">FFA</option>
                     <option value=":teams">Teams</option>
@@ -391,13 +343,6 @@ $(document).on('keyup', function(input) {
                 </div>
             </div>
             <div class="form-group">
-                <div>
-
-                   
-                    <a href="gallery" class="btn-primary btn btn-info" role="button">Skins Gallery</a>
-                    <p></p>
-                </div>
-
                 <button  type="submit" id="playBtn"
                         onclick="setNick(document.getElementById('nick').value); return false;"
                         class="btn btn-play btn-primary btn-needs-server">Play
@@ -408,18 +353,14 @@ $(document).on('keyup', function(input) {
             </div>
             <div id="settings" class="checkbox" style="display:none;">
                 <div class="form-group" id="mainform">
-                    <div id="locationKnown"></div>
-                    <button id="spectateBtn" onclick="spectate(); return false;" disabled
-                            class="btn btn-warning btn-spectate btn-needs-server">Spectate
-                    </button>
+
                     <br clear="both"/>
                 </div>
                 <div style="margin: 6px;">
-                    <label><input type="checkbox" onchange="setSkins(!$(this).is(':checked'));"> No skins</label>
                     <label><input type="checkbox" onchange="setNames(!$(this).is(':checked'));"> No names</label>
-                    <label><input type="checkbox" onchange="setDarkTheme($(this).is(':checked'));"> Dark Theme</label>
+                    <label><input type="checkbox" onchange="setDarkTheme($(this).is(':checked'));" checked> Dark Theme</label>
                     <label><input type="checkbox" onchange="setColors($(this).is(':checked'));"> No colors</label>
-                    <label><input type="checkbox" onchange="setShowMass($(this).is(':checked'));"> Show mass</label>
+                    <label><input type="checkbox" onchange="setShowMass($(this).is(':checked'));" checked> Show mass</label>
                 </div>
             </div>
         </form>
@@ -432,27 +373,6 @@ Press <b>W</b> to eject some mass<br/>
 </span></center>
         </div>
         <hr/>
-        <center>
-
-            <center>
-    <span class="text-muted">
-       </span>
-            </center>
-            <div>
-            </div>
-            <small class="text-muted text-center"></small>
-        </center>
-        <hr style="margin-bottom: 7px; "/>
-        <div style="margin-bottom: 5px; line-height: 32px; margin-left: 6px; height: 32px;">
-            <center>
-                <a href="privacy.txt" class="text-muted">Privacy</a>
-                |
-                <a href="terms.txt" class="text-muted">Terms of Service</a>
-                |
-                <a href="changelog.txt" class="text-muted">Changelog</a>
-            </center>
-        </div>
-
     </div>
 </div>
 <div id="connecting"
