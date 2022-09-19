@@ -1,5 +1,7 @@
 # Ogar3
 An open source Agar.io server implementation, written in Node.js.
+
+## EGG made for pterodactyl comptabile, made by the Poli Systems GmbH team.
 ## POSSIBLE REWRITE IN FUTURE
 ## Project Status
 The project is nearly complete. Here's a rough list of what's been done and what needs to be done:

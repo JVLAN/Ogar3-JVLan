@@ -1,1 +1,8 @@
-<script>window.location.replace('http://' + window.location.host + '/client');</script>
+<script>
+function sec() {
+  if (location.protocol === 'https:') {
+    location.protocol = 'http:';
+  }
+}
+window.location.replace('http://' + window.location.host + '/client');
+</script>
