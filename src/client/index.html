@@ -199,13 +199,6 @@
                 </div>
             </div>
             <div class="form-group">
-                <div>
-
-                   
-                    <a href="gallery" class="btn-primary btn btn-info" role="button">Skins Gallery</a>
-                    <p></p>
-                </div>
-
                 <button  type="submit" id="playBtn"
                         onclick="setNick(document.getElementById('nick').value); return false;"
                         class="btn btn-play btn-primary btn-needs-server">Play
@@ -216,18 +209,14 @@
             </div>
             <div id="settings" class="checkbox" style="display:none;">
                 <div class="form-group" id="mainform">
-                    <div id="locationKnown"></div>
-                    <button id="spectateBtn" onclick="spectate(); return false;" disabled
-                            class="btn btn-warning btn-spectate btn-needs-server">Spectate
-                    </button>
+
                     <br clear="both"/>
                 </div>
                 <div style="margin: 6px;">
-                    <label><input type="checkbox" onchange="setSkins(!$(this).is(':checked'));"> No skins</label>
                     <label><input type="checkbox" onchange="setNames(!$(this).is(':checked'));"> No names</label>
-                    <label><input type="checkbox" onchange="setDarkTheme($(this).is(':checked'));"> Dark Theme</label>
+                    <label><input type="checkbox" onchange="setDarkTheme($(this).is(':checked'));" checked> Dark Theme</label>
                     <label><input type="checkbox" onchange="setColors($(this).is(':checked'));"> No colors</label>
-                    <label><input type="checkbox" onchange="setShowMass($(this).is(':checked'));"> Show mass</label>
+                    <label><input type="checkbox" onchange="setShowMass($(this).is(':checked'));" checked> Show mass</label>
                 </div>
             </div>
         </form>

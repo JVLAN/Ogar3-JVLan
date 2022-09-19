@@ -1091,7 +1091,7 @@
         showColor = false,
         ua = false,
         userScore = 0,
-        showDarkTheme = false,
+        showDarkTheme = true,
         showMass = false,
         posX = nodeX = ~~((leftPos + rightPos) / 2),
         posY = nodeY = ~~((topPos + bottomPos) / 2),
