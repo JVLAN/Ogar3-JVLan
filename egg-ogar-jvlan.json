@@ -4,7 +4,7 @@
         "version": "PTDL_v2",
         "update_url": null
     },
-    "exported_at": "2022-09-19T23:02:15+02:00",
+    "exported_at": "2022-09-25T16:03:09+02:00",
     "name": "Ogar-JVLAN",
     "author": "support@polisystems.ch",
     "description": "Ogar3 for JVLAN egg.\r\nInclduing nodemon for monitoring, running on nodejs 16.",
@@ -62,7 +62,7 @@
             "name": "Auto Update",
             "description": "Pull the latest files on startup when using a GitHub repo. You must have .git folder, reinstall if you are missing it.",
             "env_variable": "AUTO_UPDATE",
-            "default_value": "0",
+            "default_value": "1",
             "user_viewable": true,
             "user_editable": true,
             "rules": "required|boolean",
