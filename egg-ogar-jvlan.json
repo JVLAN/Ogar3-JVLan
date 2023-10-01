@@ -4,7 +4,7 @@
         "version": "PTDL_v2",
         "update_url": null
     },
-    "exported_at": "2022-09-25T16:03:09+02:00",
+    "exported_at": "2023-10-01T16:47:09+02:00",
     "name": "Ogar-JVLAN",
     "author": "support@polisystems.ch",
     "description": "Ogar3 for JVLAN egg.\r\nInclduing nodemon for monitoring, running on nodejs 16.",
@@ -32,7 +32,7 @@
             "name": "Git Repo Address",
             "description": "GitHub Repo to clone\r\n\r\nI.E. https:\/\/github.com\/nickdevnl\/repo_name",
             "env_variable": "GIT_ADDRESS",
-            "default_value": "https:\/\/github.com\/IIPoliII\/Ogar3-JVLan.git",
+            "default_value": "https:\/\/github.com\/JVLAN\/Ogar3-JVLan.git",
             "user_viewable": true,
             "user_editable": true,
             "rules": "nullable|string",
